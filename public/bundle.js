@@ -28656,7 +28656,12 @@
 	            React.createElement(
 	                'h3',
 	                null,
-	                'About Component'
+	                'About'
+	            ),
+	            React.createElement(
+	                'p',
+	                null,
+	                'Welcome to the About page'
 	            )
 	        );
 	    }
@@ -28684,6 +28689,11 @@
 	                'h3',
 	                null,
 	                'Examples'
+	            ),
+	            React.createElement(
+	                'p',
+	                null,
+	                'Welcome to the examples page'
 	            )
 	        );
 	    }
