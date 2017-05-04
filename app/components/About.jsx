@@ -9,6 +9,6 @@ var About = React.createClass({
             </div>
         )
     }
-})
+});
 
 module.exports = About;
