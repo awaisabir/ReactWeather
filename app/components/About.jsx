@@ -5,7 +5,8 @@ var About = React.createClass({
 
         return (
             <div>
-                <h3>About Component</h3>
+                <h3>About</h3>
+                <p>Welcome to the About page</p>
             </div>
         )
     }
