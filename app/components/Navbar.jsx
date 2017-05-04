@@ -1,14 +1,15 @@
 const React = require('react');
-const { Link } = require('react-router');
+const { Link, IndexLink } = require('react-router');
 
 let Navbar = React.createClass({
     render: function() {
         return (
             <div>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="about">About</Link></li>
-                    <li><Link to="examples">Examples</Link></li>
+                    {/* Link allows to use custom styles to active links */}
+                    <li><IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Get Weather</IndexLink></li>
+                    <li><Link to="about" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>About</Link></li>
+                    <li><Link to="examples" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Examples</Link></li>
                 </ul>
             </div>
         );
