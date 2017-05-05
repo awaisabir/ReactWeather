@@ -8,6 +8,7 @@ var ExamplesComponent = require('Examples');
 
 // load foundation
 require('style!css!foundation-sites/dist/foundation.min.css');
+require('style!css!appStyle');
 $(document).foundation();
 
 ReactDOM.render(
@@ -20,6 +21,3 @@ ReactDOM.render(
   </Router>,
   document.getElementById('app')
 );
-
-
-// 5b8125392abc4970ddf9dd7e309eac74 <== API KEY

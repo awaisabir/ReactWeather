@@ -5,7 +5,7 @@ var About = React.createClass({
 
         return (
             <div>
-                <h2 className="text-center">About</h2>
+                <h2 className="text-center page-title">About</h2>
                 <p>This app is made to explore and try out what I have learned with ReactJS</p>
                 <div className="container">
                     <div className="columns medium-4">
