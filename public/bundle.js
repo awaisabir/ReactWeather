@@ -24928,7 +24928,15 @@
 	      'div',
 	      null,
 	      React.createElement(NavbarComponent, null),
-	      this.props.children
+	      React.createElement(
+	        'div',
+	        { className: 'row' },
+	        React.createElement(
+	          'div',
+	          { className: 'columns medium-6 large-4 small-centered' },
+	          this.props.children
+	        )
+	      )
 	    );
 	  }
 	});
@@ -28730,27 +28738,70 @@
 /* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
 	var About = React.createClass({
-	    displayName: 'About',
+	    displayName: "About",
 
 	    render: function render() {
 
 	        return React.createElement(
-	            'div',
+	            "div",
 	            null,
 	            React.createElement(
-	                'h3',
-	                null,
-	                'About'
+	                "h2",
+	                { className: "text-center" },
+	                "About"
 	            ),
 	            React.createElement(
-	                'p',
+	                "p",
 	                null,
-	                'Welcome to the About page'
+	                "This app is made to explore and try out what I have learned with ReactJS"
+	            ),
+	            React.createElement(
+	                "div",
+	                { className: "container" },
+	                React.createElement(
+	                    "div",
+	                    { className: "columns medium-4" },
+	                    React.createElement(
+	                        "p",
+	                        null,
+	                        React.createElement(
+	                            "a",
+	                            { href: "https://www.github.com/awaisabir/ReactWeather", target: "_blank" },
+	                            "Github Repo"
+	                        )
+	                    )
+	                ),
+	                React.createElement(
+	                    "div",
+	                    { className: "columns medium-4" },
+	                    React.createElement(
+	                        "p",
+	                        null,
+	                        React.createElement(
+	                            "a",
+	                            { href: "https://www.github.com/awaisabir/", target: "_blank" },
+	                            "My Github"
+	                        )
+	                    )
+	                ),
+	                React.createElement(
+	                    "div",
+	                    { className: "columns medium-4" },
+	                    React.createElement(
+	                        "p",
+	                        null,
+	                        React.createElement(
+	                            "a",
+	                            { href: "https://www.linkedin.com/in/awaisabir", target: "_blank" },
+	                            "Linkedin"
+	                        )
+	                    )
+	                )
 	            )
 	        );
 	    }
@@ -28764,7 +28815,10 @@
 
 	'use strict';
 
+	var _reactRouter = __webpack_require__(166);
+
 	var React = __webpack_require__(8);
+
 
 	var Examples = React.createClass({
 	    displayName: 'Examples',
@@ -28775,14 +28829,36 @@
 	            'div',
 	            null,
 	            React.createElement(
-	                'h3',
-	                null,
+	                'h1',
+	                { className: 'text-center' },
 	                'Examples'
 	            ),
 	            React.createElement(
 	                'p',
 	                null,
-	                'Welcome to the examples page'
+	                'Here are a few example locations to try out'
+	            ),
+	            React.createElement(
+	                'ol',
+	                null,
+	                React.createElement(
+	                    'li',
+	                    null,
+	                    React.createElement(
+	                        _reactRouter.Link,
+	                        { to: '/?location=Ottawa' },
+	                        'Ottawa, ON'
+	                    )
+	                ),
+	                React.createElement(
+	                    'li',
+	                    null,
+	                    React.createElement(
+	                        _reactRouter.Link,
+	                        { to: '/?location=Toronto' },
+	                        'Toronto, ON'
+	                    )
+	                )
 	            )
 	        );
 	    }
