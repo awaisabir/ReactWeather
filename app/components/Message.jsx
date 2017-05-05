@@ -4,7 +4,7 @@ const Message = React.createClass({
     render: function() {
         return (
             <div>
-                <h3>The temperature in {this.props.location} is {this.props.temp}</h3>
+                <h3 className="text-center">The temperature in {this.props.location} is {this.props.temp}</h3>
             </div>
         )
     }
